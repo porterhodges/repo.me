@@ -31,7 +31,7 @@ if [[ "$(uname)" == "Darwin" ]]; then # macOS (Intel) usage of repo.me
         done
     fi
 if [[ "$(uname)" == "Darwin" ]]; then # macOS (Arm) usage of repo.me
-    if [[ "$(uname -m)" == "x86_64" ]]; then
+    if [[ "$(uname -m)" == "arm64" ]]; then
         echo "Checking for Homebrew, wget, xz, & zstd..."
         if test ! "$(which brew)"; then
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
